@@ -55,7 +55,7 @@ namespace Sooziales_Netzwerk.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("idLink,link,username,likes")] Link link)
+        public async Task<IActionResult> Create([Bind("idLink,linkText,username,likes")] Link link)
         {
             if (ModelState.IsValid)
             {

@@ -10,15 +10,15 @@ namespace Sooziales_Netzwerk.Models{
         public int idLink {get; set;}
 
         [Display(Name = "Enter Link")]
-        [Required]
-        public string link {get; set;}
+        [Required(ErrorMessage = "Upload without a link make no sence")]
+        public string linkText {get; set;}
 
         [Display(Name = "Enter Username")]
-        [Required]
+        [Required(ErrorMessage = "Upload without a username make no sence")]
         public string username {get; set;}
 
         [Display(Name = "Enter Likes")]
-        [Required]
+        [Required(ErrorMessage = "Upload without a link make no sence")]
         public int likes {get; set;}
     }
 }
