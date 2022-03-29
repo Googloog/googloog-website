@@ -10,6 +10,13 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+builder.Services.AddDbContext<Sooziales_NetzwerkDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("LinkConnection")));
+
+/*var connectionString2 = builder.Configuration.GetConnectionString("LinkConnection");
+builder.Services.AddDbContext<Sooziales_NetzwerkDbContext>(options =>
+    options.UseSqlite(connectionString2));
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();*/
+
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();

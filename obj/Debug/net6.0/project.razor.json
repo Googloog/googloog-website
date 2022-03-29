@@ -16313,6 +16313,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Views/Link/Delete.cshtml",
+      "TargetPath": "Views\\Link\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -16328,8 +16333,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Views/Link/Details.cshtml",
+      "TargetPath": "Views\\Link\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Views/Link/Index.cshtml",
+      "TargetPath": "Views\\Link\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16340,6 +16355,16 @@
     {
       "FilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Views/Link/Create.cshtml",
+      "TargetPath": "Views\\Link\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Views/Link/Edit.cshtml",
+      "TargetPath": "Views\\Link\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
