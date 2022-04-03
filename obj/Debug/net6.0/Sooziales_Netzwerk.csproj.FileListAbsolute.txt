@@ -1,7 +1,6 @@
 /home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/bin/Debug/net6.0/appsettings.Development.json
 /home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/bin/Debug/net6.0/appsettings.json
 /home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/bin/Debug/net6.0/Sooziales_Netzwerk.staticwebassets.runtime.json
-/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/bin/Debug/net6.0/app.db
 /home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/bin/Debug/net6.0/Sooziales_Netzwerk
 /home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/bin/Debug/net6.0/Sooziales_Netzwerk.deps.json
 /home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/bin/Debug/net6.0/Sooziales_Netzwerk.runtimeconfig.json
@@ -266,3 +265,4 @@
 /home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 /home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/bin/Debug/net6.0/runtimes/win-arm/lib/net6.0/dotnet-aspnet-codegenerator-design.exe
 /home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/bin/Debug/net6.0/runtimes/win-arm64/lib/net6.0/dotnet-aspnet-codegenerator-design.exe
+/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/bin/Debug/net6.0/app.db
