@@ -16308,8 +16308,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16380,6 +16390,11 @@
     {
       "FilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {

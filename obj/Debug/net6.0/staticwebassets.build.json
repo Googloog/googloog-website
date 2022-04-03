@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7h2KYrYX6Io/twhyma9bEQXtvSiuB1dCa8GqpJ3697M=",
+  "Hash": "J13/F57myV+zGoAYF4E8jT1+7boKy76YHIgE8jZhL5k=",
   "Source": "Sooziales_Netzwerk",
   "BasePath": "_content/Sooziales_Netzwerk",
   "Mode": "Default",
@@ -1088,6 +1088,23 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
+      "Identity": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/wwwroot/davidshimjs-qrcodejs-04f46c6.zip",
+      "SourceId": "Sooziales_Netzwerk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/wwwroot/",
+      "BasePath": "_content/Sooziales_Netzwerk",
+      "RelativePath": "davidshimjs-qrcodejs-04f46c6.zip",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/davidshimjs-qrcodejs-04f46c6.zip"
+    },
+    {
       "Identity": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/wwwroot/favicon.ico",
       "SourceId": "Sooziales_Netzwerk",
       "SourceType": "Discovered",
@@ -1103,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/wwwroot/js/qr.js",
+      "SourceId": "Sooziales_Netzwerk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/wwwroot/",
+      "BasePath": "_content/Sooziales_Netzwerk",
+      "RelativePath": "js/qr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/qr.js"
     },
     {
       "Identity": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/wwwroot/js/site.js",
@@ -2089,6 +2123,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/wwwroot/lib/qrcode.js",
+      "SourceId": "Sooziales_Netzwerk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/wwwroot/",
+      "BasePath": "_content/Sooziales_Netzwerk",
+      "RelativePath": "lib/qrcode.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/qrcode.js"
     }
   ]
 }
