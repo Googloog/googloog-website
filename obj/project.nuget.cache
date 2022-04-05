@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UTZRy2KkcRNK/anS2m1iqvEbDsvw+JJykBRh/VEzcrZyb32god3pN3nhI+qpf/mCM7X11utoast/0/6aWZ6Pnw==",
+  "dgSpecHash": "0pGJ0nmGEKYvhZCCm1CW+4v7RSdXnkBoKv1TFE3K3CyeETNap1H1E50nHMmZc/8s3zf6otY++/CT69Ae06oIZg==",
   "success": true,
   "projectFilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Sooziales_Netzwerk.csproj",
   "expectedPackageFiles": [
+    "/home/philipp/.nuget/packages/aspnet.security.oauth.github/6.0.5/aspnet.security.oauth.github.6.0.5.nupkg.sha512",
     "/home/philipp/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/philipp/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
     "/home/philipp/.nuget/packages/messagepack.annotations/2.1.152/messagepack.annotations.2.1.152.nupkg.sha512",
@@ -84,6 +85,7 @@
     "/home/philipp/.nuget/packages/nuget.projectmodel/5.11.0/nuget.projectmodel.5.11.0.nupkg.sha512",
     "/home/philipp/.nuget/packages/nuget.protocol/5.11.0/nuget.protocol.5.11.0.nupkg.sha512",
     "/home/philipp/.nuget/packages/nuget.versioning/5.11.0/nuget.versioning.5.11.0.nupkg.sha512",
+    "/home/philipp/.nuget/packages/octokit/0.50.0/octokit.0.50.0.nupkg.sha512",
     "/home/philipp/.nuget/packages/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/home/philipp/.nuget/packages/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/home/philipp/.nuget/packages/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

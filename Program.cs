@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Identity;
+/*using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Sooziales_Netzwerk.Data;
 
@@ -12,10 +12,6 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDbContext<Sooziales_NetzwerkDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("LinkConnection")));
 
-/*var connectionString2 = builder.Configuration.GetConnectionString("LinkConnection");
-builder.Services.AddDbContext<Sooziales_NetzwerkDbContext>(options =>
-    options.UseSqlite(connectionString2));
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();*/
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -48,4 +44,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
 
-app.Run();
+app.Run();*/
