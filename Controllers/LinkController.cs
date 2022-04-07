@@ -8,9 +8,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Sooziales_Netzwerk.Data;
 using Sooziales_Netzwerk.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Sooziales_Netzwerk.Controllers
 {
+    [Authorize]
     public class LinkController : Controller
     {
         private readonly Sooziales_NetzwerkDbContext _context;
@@ -120,6 +122,7 @@ namespace Sooziales_Netzwerk.Controllers
         }
 
         // GET: Link/Delete/5
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

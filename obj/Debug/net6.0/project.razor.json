@@ -16388,6 +16388,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Areas/Identity/Pages/Account/ExternalLogin.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
