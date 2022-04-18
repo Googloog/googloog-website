@@ -53,6 +53,15 @@
       "MessagePackAnalyzer/2.1.152": {
         "type": "package"
       },
+      "Microsoft.AspNet.WebPages.Data/2.0.20710": {
+        "type": "package",
+        "compile": {
+          "lib/net40/WebMatrix.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net40/WebMatrix.Data.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.3": {
         "type": "package",
         "compile": {
@@ -3245,6 +3254,12 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "WebMatrix.Data/2.0.30506": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebPages.Data": "2.0.20710"
+        }
       }
     }
   },
@@ -3323,6 +3338,19 @@
         "messagepackanalyzer.nuspec",
         "tools/install.ps1",
         "tools/uninstall.ps1"
+      ]
+    },
+    "Microsoft.AspNet.WebPages.Data/2.0.20710": {
+      "sha512": "PTwS5C1vF69FDikWhUkJZ4qb96yxtdVuVR90Hjt7e/GDNVOeR7tXMYWHs9cPP0v35EiO+V6BUj1c8dNCUXW7Ag==",
+      "type": "package",
+      "path": "microsoft.aspnet.webpages.data/2.0.20710",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/WebMatrix.Data.dll",
+        "lib/net40/WebMatrix.Data.xml",
+        "microsoft.aspnet.webpages.data.2.0.20710.nupkg.sha512",
+        "microsoft.aspnet.webpages.data.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.3": {
@@ -9915,6 +9943,17 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "WebMatrix.Data/2.0.30506": {
+      "sha512": "SL5Gi0iWGv+qBm2NYceRseYljjpMxeANa8F6/LcAkZKyRjUxuUlbY63ZrmuZdz7aBSNeD8jIWF8gFsp9pCWh+w==",
+      "type": "package",
+      "path": "webmatrix.data/2.0.30506",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "webmatrix.data.2.0.30506.nupkg.sha512",
+        "webmatrix.data.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -9926,7 +9965,8 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.3",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.2",
-      "Octokit >= 0.50.0"
+      "Octokit >= 0.50.0",
+      "WebMatrix.Data >= 2.0.30506"
     ]
   },
   "packageFolders": {
@@ -9997,6 +10037,10 @@
           "Octokit": {
             "target": "Package",
             "version": "[0.50.0, )"
+          },
+          "WebMatrix.Data": {
+            "target": "Package",
+            "version": "[2.0.30506, )"
           }
         },
         "imports": [
@@ -10020,5 +10064,17 @@
         "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Das Paket \"Microsoft.AspNet.WebPages.Data 2.0.20710\" wurde nicht mit dem Projektzielframework \"net6.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "libraryId": "Microsoft.AspNet.WebPages.Data",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

@@ -268,3 +268,4 @@
 /home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/bin/Debug/net6.0/AspNet.Security.OAuth.GitHub.dll
 /home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/bin/Debug/net6.0/Octokit.dll
 /home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/bin/Debug/net6.0/app.db
+/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/bin/Debug/net6.0/WebMatrix.Data.dll
