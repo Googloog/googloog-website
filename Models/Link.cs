@@ -18,9 +18,9 @@ namespace Sooziales_Netzwerk.Models{
         [Required(ErrorMessage = "Upload without a username make no sence")]
         public string username {get; set;}
 
-        [Display(Name = "Enter Likes")]
-        [Required(ErrorMessage = "Upload without a link make no sence")]
-        public int likes {get; set;}
+        //[Display(Name = "Enter Likes")]
+        //[Required(ErrorMessage = "Upload without a link make no sence")]
+        public int likes = 0;
     }
 }
 

@@ -16,9 +16,10 @@ public class HomeController : Controller
         _logger = logger;
     }*/
 
-    public HomeController(Sooziales_NetzwerkDbContext context)
+    public HomeController(Sooziales_NetzwerkDbContext context, ILogger<HomeController> logger)
     {
         _context = context;
+        _logger = logger;
     }
 
     public async Task<IActionResult> Index()
