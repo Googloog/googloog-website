@@ -27,14 +27,13 @@
         <p>@Html.DisplayFor(modelItem => item.username)</p>
         if(item.linkText.Contains("https://www.youtube.com/watch?v=")){
             String videoId = item.linkText.Remove(0,32);
-            Console.WriteLine(videoId);
             String embedLink =  "https://www.youtube-nocookie.com/embed/" + videoId;
             <iframe width="560" height="315" src=@embedLink title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
         }
         if(item.username == "Test"){
             item.likes = 5;
         }
+        
         <p>👍 @Html.DisplayFor(modelItem => item.likes)</p>
     }
 </div>
