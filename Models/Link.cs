@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Identity;
 
 namespace Sooziales_Netzwerk.Models{
+    
     public class Link{
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -21,6 +22,12 @@ namespace Sooziales_Netzwerk.Models{
         //[Display(Name = "Enter Likes")]
         //[Required(ErrorMessage = "Upload without a link make no sence")]
         public int likes = 0;
+
+        //[Display(Name = "Who can see you post?")]
+        //[Required(ErrorMessage = "Please choose who can see your post?")]
+        public enum visibility {Public, Friends, Private};
+
+        //public string[] comments {set; get;}
     }
 }
 

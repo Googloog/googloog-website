@@ -17,9 +17,9 @@
                 <input asp-for="linkText" class="form-control" />
                 <span asp-validation-for="linkText" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="visibility: hidden;">
                 <label asp-for="username" class="control-label"></label>
-                <input asp-for="username" class="form-control" />
+                <input asp-for="username" class="form-control" placeholder=@User.Identity.Name value="@User.Identity.Name"/>
                 <span asp-validation-for="username" class="text-danger"></span>
             </div>
             <div class="form-group">

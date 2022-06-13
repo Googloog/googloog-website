@@ -32,6 +32,12 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Profile(String? id)
+        {
+            if (id == null) return BadRequest();
+            return View(id);
+        }
+
     public IActionResult TermsOfService()
     {
         return View();

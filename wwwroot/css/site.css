@@ -16,3 +16,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+.provide{
+  background-color: green;
+  border-radius: 15px;
+}
