@@ -70,7 +70,14 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
-
+builder.Services.Configure<CookiePolicyOptions>(options =>
+        {
+            // This lambda determines whether user consent for non-essential 
+            // cookies is needed for a given request.
+            options.CheckConsentNeeded = context => true;
+            // requires using Microsoft.AspNetCore.Http;
+            options.MinimumSameSitePolicy = SameSiteMode.None;
+        });
 
 var app = builder.Build();
 
@@ -95,6 +102,8 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseCookiePolicy();
 
 app.MapControllerRoute(
     name: "default",
