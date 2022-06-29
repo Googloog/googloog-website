@@ -1,0 +1,14 @@
+name: Automated Answer
+
+on:
+  issues:
+    types: [opened]
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: EddieHubCommunity/gh-action-community/src/welcome@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: "Thanks for creating this issue and contributing to Googloog. We will look at your issue soon."
+          footer: "Please mention your specs and your Operation System. As well as your Browser and the version of the Browser!"
