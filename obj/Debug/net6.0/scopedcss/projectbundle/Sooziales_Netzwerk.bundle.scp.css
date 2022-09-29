@@ -47,3 +47,11 @@ button.accept-policy[b-qe523rrqfi] {
   white-space: nowrap;
   line-height: 60px;
 }
+
+
+.navbar[b-qe523rrqfi]{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}

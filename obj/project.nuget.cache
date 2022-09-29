@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+iqnTLDlgdwMOvkZoYczT9UQZHH2UMhHtgRLmqwIyg4t6FfnzPo3RkAe8M+9diiF4hhVVg9Xp0ttlA4T60BRhw==",
+  "dgSpecHash": "FDZ540okfJVFVw/Q5DNWhQ/K3PU0rhFWDIYbGyJbQRHmc140mJbyfMJsHVYlTBZJ93MYBsdtWvo8v4UBIHc/fw==",
   "success": true,
   "projectFilePath": "/home/philipp/Dokumente/Programmieren/C#/Sooziales_Netzwerk/Sooziales_Netzwerk.csproj",
   "expectedPackageFiles": [
@@ -193,7 +193,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Das Paket \"Microsoft.AspNet.WebPages.Data 2.0.20710\" wurde nicht mit dem Projektzielframework \"net6.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "message": "Das Paket \"Microsoft.AspNet.WebPages.Data 2.0.20710\" wurde nicht mit dem Projektzielframework \"net6.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
       "libraryId": "Microsoft.AspNet.WebPages.Data",
       "targetGraphs": [
         "net6.0"

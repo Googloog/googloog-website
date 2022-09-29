@@ -1,3 +1,4 @@
+
 @model IEnumerable<Sooziales_Netzwerk.Models.Link>
 @using Microsoft.AspNetCore.Identity;
 @inject SignInManager<IdentityUser> SignInManager
@@ -5,25 +6,29 @@
 
 @{
     ViewData["Title"] = "Home Page";
-    String IDusername = User.Identity?.Name;
+    String username = User.Identity?.Name;
     if(User.IsInRole("verified")){
-       IDusername = IDusername + "✓";
+       username = username + "✓";
     }
 }
 
 <div class="text-center">
     @if(SignInManager.IsSignedIn(User))
     {
-        <h1 class="display-4">Welcome @IDusername</h1>
+        <h1 class="display-4">Welcome @username</h1>
     }else 
     {
-        <h1 class="display-4">SavedThat</h1>
-        <p>Link your Life up!</p>
+        
+
     }
 
     @foreach (var item in Model) {
-        string getParameterIdValue = (string)Url.ActionContext.RouteData.Values["id"];
-       if(item.username == getParameterIdValue){
+        if(item.username == User.Identity?.Name){
+            <script>
+            function copyToClipboard(var linktext){
+                window.clipboardData.setData('Text', linktext);
+            }
+        </script>
         <h2>@Html.DisplayFor(modelItem => item.linkText)</h2>
         <p>@Html.DisplayFor(modelItem => item.username)</p>
         if(item.linkText.Contains("https://www.youtube.com/watch?v=")){
@@ -42,7 +47,7 @@
         }
         bool liked = false;
         var selectedQueryString = "UPDATE Link SET likes = 1 WHERE idLink = " + item.idLink;
-        <button onclick=>👍 @Html.DisplayFor(modelItem => item.likes)</button>
+        <button onclick=>🚀 </button>
         <button onclick=copyToClipboard(@item.linkText)>Share</button>
         }
     }

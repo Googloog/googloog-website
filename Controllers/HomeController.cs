@@ -27,16 +27,24 @@ public class HomeController : Controller
         return View(await _context.Link.ToListAsync());
     }
 
+    public async Task<IActionResult> LikeButton(){
+        /*Console.WriteLine("Test!");
+        link.likes = link.likes + 1;
+        _context.Update(link);
+        _context.SaveChanges();
+        Console.WriteLine("Test2");*/
+        return View(await _context.Link.ToListAsync());
+    }
+
     public IActionResult Privacy()
     {
         return View();
     }
 
-    public IActionResult Profile(String? id)
-        {
-            if (id == null) return BadRequest();
-            return View(id);
-        }
+    public async Task<IActionResult> Profile()
+    {
+        return View(await _context.Link.ToListAsync());
+    }
 
     public IActionResult TermsOfService()
     {
