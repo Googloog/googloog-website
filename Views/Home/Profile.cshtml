@@ -1,30 +1,30 @@
-
-@model IEnumerable<Sooziales_Netzwerk.Models.Link>
+@model IEnumerable<Sooziales_Netzwerk.Models.Link>;
 @using Microsoft.AspNetCore.Identity;
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
+@inject Sooziales_Netzwerk.Data.Sooziales_NetzwerkDbContext _context;
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Profile";
+    ViewBag.Context = _context;
     String username = User.Identity?.Name;
     if(User.IsInRole("verified")){
        username = username + "✓";
     }
 }
 
+
+
 <div class="text-center">
     @if(SignInManager.IsSignedIn(User))
     {
-        <h1 class="display-4">Welcome @username</h1>
-    }else 
-    {
-        
-
+        <h1 class="display-4">@username</h1>
     }
 
     @foreach (var item in Model) {
         if(item.username == User.Identity?.Name){
-            <script>
+
+        <script>
             function copyToClipboard(var linktext){
                 window.clipboardData.setData('Text', linktext);
             }
@@ -47,8 +47,58 @@
         }
         bool liked = false;
         var selectedQueryString = "UPDATE Link SET likes = 1 WHERE idLink = " + item.idLink;
-        <button onclick=>🚀 </button>
+        
+        @using (Html.BeginForm("LikeButton", "Button")){
+            <button type="submit" name=@item.idLink>🚀 @item.likes</button>
+        }
         <button onclick=copyToClipboard(@item.linkText)>Share</button>
+        <button id="reportButton">Report</button>
+        <dialog id="report">
+            <h2>Report</h2>
+            <p>We sorry that you see such posts on Goodloog</p>
+            <p>To help us improve our experience and remove bad things from our platform please specify the reason you want this post to be removed.</p>
+
+            <script>
+                function changeReasons(){
+                    if(document.getElementById('reasons').value === "Copyright/Privacy") {
+                        var parent = document.getElementById('report');
+                        parent.innerHTML += "<p> Please choose how the post is against your copyright</p><select name='Privacy'> <option value='Picture'>This Post contains a picture of me or my child</option> <option value='Personal Information'>This post contains personal information of me or someone else</option> <option value='Copyright'> I own the copyright to this post and want to have it removed</option></select>"
+                    }
+                }
+            </script>
+
+            <select name="reasons" id="reasons" onchange="changeReasons()">
+                <option value="Harassment">Hate Speech/Bullying/Harassment</option>
+                <option value="Abuse">Sexusal Abuse or Child Abuse</option>
+                <option value="Death">Death Threats/Sucide/Death People</option>
+                <option value="Copyright/Privacy"> Copyright or Privacy Concerns</option>
+            </select>
+
+            <button>Send Report</button>
+            <button>Cancel</button>
+        </dialog>
         }
     }
 </div>
+
+@{
+    void Like(Link link){
+        Console.WriteLine("Test!");
+        link.likes = link.likes + 1;
+        _context.Update(link);
+        _context.SaveChanges();
+        Console.WriteLine("Test2");
+    }
+}
+
+<script>
+    const reportButton = document.getElementById('reportButton');
+    const reportDialog = document.getElementById('report');
+    reportButton.addEventListener('click', () => {
+        if (typeof reportDialog.showModal === 'function'){
+            reportDialog.showModal();
+        }else{
+            alert("Sorry. You Browser does not support our report system. Please write a email.");
+        }
+    });
+</script>
